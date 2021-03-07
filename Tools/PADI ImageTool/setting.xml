@@ -1,0 +1,45 @@
+﻿<setting>
+  <download>
+    <FlashSize>1</FlashSize>
+    <BOOTPath />
+    <FW1Path />
+    <FW2Path />
+    <FW2Offset>0</FW2Offset>
+    <USERPath />
+    <USEROffset>0</USEROffset>
+    <Trigger1Ena>False</Trigger1Ena>
+    <Trigger1Level>-1</Trigger1Level>
+    <Trigger1Port>-1</Trigger1Port>
+    <Trigger1Pin>-1</Trigger1Pin>
+    <Trigger2Ena>False</Trigger2Ena>
+    <Trigger2Level>-1</Trigger2Level>
+    <Trigger2Port>-1</Trigger2Port>
+    <Trigger2Pin>-1</Trigger2Pin>
+    <VerifyBOOT>False</VerifyBOOT>
+    <VerifyFW1>False</VerifyFW1>
+    <VerifyFW2>False</VerifyFW2>
+    <VerifyUSER>True</VerifyUSER>
+    <JlinkPath>C:\Data\JLink_V692</JlinkPath>
+    <AdvMode>True</AdvMode>
+    <FactoryMode>False</FactoryMode>
+    <EraseSkipCal>True</EraseSkipCal>
+  </download>
+  <generate>
+    <FlashSize>0</FlashSize>
+    <DefaultPath />
+    <OTAPath />
+    <OTAOffset />
+    <USER1Path />
+    <USER1Offset />
+    <SAVEPath>output.bin</SAVEPath>
+    <Trigger1Ena>False</Trigger1Ena>
+    <Trigger1Level>-1</Trigger1Level>
+    <Trigger1Port>2</Trigger1Port>
+    <Trigger1Pin>4</Trigger1Pin>
+    <Trigger2Ena>False</Trigger2Ena>
+    <Trigger2Level>-1</Trigger2Level>
+    <Trigger2Port>-1</Trigger2Port>
+    <Trigger2Pin>-1</Trigger2Pin>
+    <BootOption>1</BootOption>
+  </generate>
+</setting>

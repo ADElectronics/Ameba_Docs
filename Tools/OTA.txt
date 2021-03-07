@@ -1,0 +1,23 @@
+https://esp8266.ru/forum/threads/arduino-dlja-rtl8710.1787/page-13
+
+Прошейте этот бинарник https://github.com/pvvx/RtlDuino/blob/master/development/rtl87xx/tools/OTA_RTLDuino.bin
+
+В нем OTA для RtlDuino (0xb000) и AT V2.2 (OTA:0x80000)
+Переключаются PC_1:
+Если PC_1 = "1" (свободен) - грузит OTA для RtlDuino
+Если PC_1 = "0" (соединен на GND) - грузит AT вариант
+OTA для RtlDuino создает AP:
+
+SSID: RTLDUINO_OTA
+PASSWORD: 0123456789
+BSSID: 0:F8:87:11:0:12
+
+IP Address: 192.168.1.1
+NetMask: 255.255.255.0
+Gateway: 192.168.1.1
+
+Для AT команд работает UART2 (TX/RX PA_4/PA_0) и console (TX/RX PB_0/PB_1).
+Прошивка AT может грузить OTA по UART0 (TX/RX PC_3/PC_0) по команде "ATSX" - протокол XMODEM, 115200 baud.
+Указывается файл ota.bin.
+Снимок1273.gif 
+Также, после конфигурации Station в AT можно загрузить OTA прошивку с помощью https://github.com/pvvx/RtlDuino/tree/master/development/rtl87xx/tools/DownloadServer

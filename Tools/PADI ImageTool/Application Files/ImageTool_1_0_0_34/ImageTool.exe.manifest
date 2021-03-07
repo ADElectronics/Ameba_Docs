@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="ImageTool.exe" version="1.0.0.34" publicKeyToken="f8183547a2f76851" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="favicon.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="ImageTool" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="ImageTool.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ImageTool.exe" size="145360">
+      <assemblyIdentity name="ImageTool" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>PISXhb1K4ZjpDz8E7cLUw/FPr39O6g9aXFe+iE2sz4U=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="favicon.ico" size="15086">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>y6/wsz9EeifSFV4eP9aQDDmBYqpgnAmB90729cKQbWE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="ImageTool.exe.config" size="174">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>63nuoTVs7PpWkeDFo4yUQYWADpAOHWIorJEHqaNxg44=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=RTDOMAIN\alfa.chou" issuerKeyHash="723c643dc0aa0c81fcefda01addef28025b12ef2" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>tYAJMhgI/leBH6Q7TrXlvWv1J1IwJNSvrS+ScaEBnIQ=</DigestValue></Reference></SignedInfo><SignatureValue>nZVD9Buuu5uqLHtBp+X+apYQGbv/XU/Tl1yVuXHy0QSh7mpGNxRKHQZEIEuzDSrRS5XpzLs3FotRuCZLmS0nTYQwCCbttWXmVUeQ5SPtnbf1fynAEmBMyb+zwB9IPYepqlTHJ2k1C4yuAUKBelX+rCV/H7SYs9oxJ9/Ltks8rrU=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>qRdOHEBYJQF6rCOWH9len6nJSNZIj/7y83BiWV+V3SAMW98qOZ5KgWZ0my36zhpHS/uDZSVQYzaAUWWGwCUIXDZUPIi5/YOSKHluTDmJ+mMWnPs3AFW4Wiu/5Y6A2g+S6tvM9/fc3t2McLb6+GH/gggoV9XtnybnzYPQR3QTOlE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="849c01a171922fadafd424305227f56bbde5b54e3ba41f8157fe0818320980b5" Description="" Url=""><as:assemblyIdentity name="ImageTool.exe" version="1.0.0.34" publicKeyToken="f8183547a2f76851" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=RTDOMAIN\alfa.chou</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>QiWxlUx73NlV9H+nh9Pc0stYE1b1JoY7wCydMerLHWM=</DigestValue></Reference></SignedInfo><SignatureValue>FNatfWBtRxFxhLSWJ9HP/l5N86IZyNUyRpbH4rRXAS/2DCdw704MJm8lhue25sLqP/ECSsX5svwimDVtQ0kIpfOy3mpcshvaNpWNFVdDhLFeaPjjYXDe3nuZ3oK0Mc01D255vMYSf3BDk/RqwrkaVKw6XgbNGZiycEDhtZfYri0=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>qRdOHEBYJQF6rCOWH9len6nJSNZIj/7y83BiWV+V3SAMW98qOZ5KgWZ0my36zhpHS/uDZSVQYzaAUWWGwCUIXDZUPIi5/YOSKHluTDmJ+mMWnPs3AFW4Wiu/5Y6A2g+S6tvM9/fc3t2McLb6+GH/gggoV9XtnybnzYPQR3QTOlE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB4TCCAUqgAwIBAgIQIuAyKGyKbLJA2qiu9kaxoTANBgkqhkiG9w0BAQsFADAvMS0wKwYDVQQDHiQAUgBUAEQATwBNAEEASQBOAFwAYQBsAGYAYQAuAGMAaABvAHUwHhcNMTUwMzA1MDgyNjMxWhcNMTYwMzA0MTQyNjMxWjAvMS0wKwYDVQQDHiQAUgBUAEQATwBNAEEASQBOAFwAYQBsAGYAYQAuAGMAaABvAHUwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAKkXThxAWCUBeqwjlh/ZXp+pyUjWSI/+8vNwYllfld0gDFvfKjmeSoFmdJst+s4aR0v7g2UlUGM2gFFlhsAlCFw2VDyIuf2Dkih5bkw5ifpjFpz7NwBVuForv+WOgNoPkurbzPf33N7djHC2+vhh/4IIKFfV7Z8m582D0Ed0EzpRAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAJwH5AlyO+H8K1642SYotp6zplPkrYBZcr4yFGPe7l6ETNObTN1a6+p2agjmTfEcTMiscSb/SeZmnfjlNi/ev87dURIDODEG714LNcWZByJ/ERibb9UgTn2dOFX6Ap96lRp7inBlSoFk6NsFXlzFYbqUdhkcjSmFngBu2piMmM5g=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
